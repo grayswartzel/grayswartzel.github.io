@@ -1,0 +1,14 @@
+{
+	"title" : "xxx",
+	"role" : "xxx",
+	"description" : "xxx",
+	"date" : "xxx",
+	"globalExt" : "jpg",
+	"numDigits" : 3,
+	"images" : [
+		1
+	],
+	"captions" : {
+		"1" : "xxx"
+	}
+}

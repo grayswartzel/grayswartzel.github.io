@@ -1,0 +1,47 @@
+{
+	"homeFolderName" : "_assets/home",
+	"imgExt" : "jpg",
+	"projects" : [
+		{
+			"projectID" : "001",
+			"title" : "Beautiful Minds\n\\ xxx.\n2019",
+			"url" : "http://grayswartzel.github.io/beautiful-minds",
+			"unlisted" : "false"
+		},
+		{
+			"projectID" : "002",
+			"title" : "Mother Me Part I\n\\ xxx.\n2019",
+			"url" : "http://grayswartzel.github.io/mother-me-part-i"
+		},
+		{
+			"projectID" : "003",
+			"title" : "Mother Me Part II\n\\ xxx.\n2019",
+			"url" : "http://grayswartzel.github.io/mother-me-part-ii"
+		},
+		{
+			"projectID" : "004",
+			"title" : "Made Up\n\\ xxx.\n2019",
+			"url" : "http://grayswartzel.github.io/made-up"
+		},
+		{
+			"projectID" : "005",
+			"title" : "Blood Harmony\n\\ xxx.\n2019",
+			"url" : "http://grayswartzel.github.io/blood-harmony"
+		},
+		{
+			"projectID" : "006",
+			"title" : "Intergenerational Transfer\n\\ xxx.\n2019",
+			"url" : "http://grayswartzel.github.io/intergenerational-transfer"
+		},
+		{
+			"projectID" : "007",
+			"title" : "Maternal Interior\n\\ xxx.\n2019",
+			"url" : "http://grayswartzel.github.io/maternal-interior"
+		},
+		{
+			"projectID" : "008",
+			"title" : "Mother Tongue No. II\n\\ xxx.\n2019",
+			"url" : "http://grayswartzel.github.io/mother-tongue-no-ii"
+		}
+	]
+}
