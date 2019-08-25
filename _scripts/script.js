@@ -79,8 +79,8 @@ var newsHeadlineURL = ""
 // title serif: Andale, Baskerville, Batang*, Bell MT, Bookman Old Style, CAllisto MT, Cochin*, Consolas, Didot
 // body serif: Cambria, Cochin*, Century, Garamond
 
-var mainURL = "http://grayswartzel.github.io";
-var domainKey = "grayswartzel";	// used to check if we're in my domain
+var mainURL = "http://grayyy.com";
+var domainKey = "grayyy";	// used to check if we're in my domain
 var mailKey = "mailto";
 
 // window parameters
