@@ -3,45 +3,30 @@
 	"imgExt" : "jpg",
 	"projects" : [
 		{
+			"projectID" : "002",
+			"title" : "Mother Me Part I\n\\ On creative application of art-based storytelling.\n2019",
+			"url" : "http://grayyy.com/mother-me-part-i"
+		},
+		{
 			"projectID" : "001",
-			"title" : "Beautiful Minds\n\\ xxx.\n2019",
+			"title" : "Beautiful Minds\n\\ On creative brand strategy.\n2019",
 			"url" : "http://grayyy.com/beautiful-minds",
 			"unlisted" : "false"
 		},
 		{
-			"projectID" : "002",
-			"title" : "Mother Me Part I\n\\ xxx.\n2019",
-			"url" : "http://grayyy.com/mother-me-part-i"
-		},
-		{
 			"projectID" : "003",
-			"title" : "Mother Me Part II\n\\ xxx.\n2019",
+			"title" : "Mother Me Part II\n\\ On creative application of art-based storytelling.\n2019",
 			"url" : "http://grayyy.com/mother-me-part-ii"
 		},
 		{
 			"projectID" : "004",
-			"title" : "Made Up\n\\ xxx.\n2019",
+			"title" : "Made Up\n\\ On identity, transformation, and play.\n2015",
 			"url" : "http://grayyy.com/made-up"
 		},
 		{
 			"projectID" : "005",
-			"title" : "Blood Harmony\n\\ xxx.\n2019",
+			"title" : "Blood Harmony\n\\ On familial collaboration, folklore, and image construction.\n2014",
 			"url" : "http://grayyy.com/blood-harmony"
-		},
-		{
-			"projectID" : "006",
-			"title" : "Intergenerational Transfer\n\\ xxx.\n2019",
-			"url" : "http://grayyy.com/intergenerational-transfer"
-		},
-		{
-			"projectID" : "007",
-			"title" : "Maternal Interior\n\\ xxx.\n2019",
-			"url" : "http://grayyy.com/maternal-interior"
-		},
-		{
-			"projectID" : "008",
-			"title" : "Mother Tongue No. II\n\\ xxx.\n2019",
-			"url" : "http://grayyy.com/mother-tongue-no-ii"
 		}
 	]
 }

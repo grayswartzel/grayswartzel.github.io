@@ -1,14 +1,20 @@
 {
-	"title" : "xxx",
-	"role" : "xxx",
-	"description" : "xxx",
-	"date" : "xxx",
+	"title" : "Made Up",
+	"role" : "Concept, Art Direction",
+	"description" : "Made up, conceived and executed collaboratively with Erin Vaughan, is an exploration of human transformation via play, the primary mode through which we learn to be human and form individual identities.\n\nThe project began with an ad posted to Craigslist in New York, NY, seeking individuals who either had a secret feminine identity, or wished to cultivate one. Erin and I met with those who responded, and made a portrait of them as they self-present on a daily basis, in the public sphere. Then, we conducted an interview based on their dreams and visions, and helped them to develop an idea of future fantasy play, which Erin and I would attempt to bring to reality. After helping the participants to craft a new physical, emotional, and spiritual feminine identity, we created a new portrait and conducted another interview, wishing to emphasize emotion over reason.\n\nErin and I believe that identity is fluid and the practice of working closely with trusted others can have a positive impact upon one’s feelings regarding both their inward and outwardly perceived self.  Made Up was motivated by both the nuances of humanity and the love of those who embrace their differences, while attempting to break down othering classification schemas. Our only hope was to help people to realize and embody their true ego and the feminized person they had always dreamt of becoming.",
+	"date" : "2015",
 	"globalExt" : "jpg",
 	"numDigits" : 3,
 	"images" : [
-		1
+		[1, 2, 3],
+		[4, 5, 6],
+		[7, 8, 9],
+		[10, 11, 12]
 	],
 	"captions" : {
-		"1" : "xxx"
+		"1" : "xxx",
+		"4" : "xxx",
+		"7" : "xxx",
+		"10" : "xxx"
 	}
 }

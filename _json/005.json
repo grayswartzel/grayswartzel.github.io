@@ -1,14 +1,20 @@
 {
-	"title" : "xxx",
-	"role" : "xxx",
-	"description" : "xxx",
-	"date" : "xxx",
+	"title" : "Blood Harmony",
+	"role" : "Concept, Art Direction",
+	"description" : "Blood Harmony developed out of the themes of love, vulnerability, and the spectrum of gender performance, but ultimately it speaks of the aesthetic and conceptual power of family. The process of using Mother and Father as subjects inspired me to make visual both the maternal and paternal spaces within which I function as a son, artist, photographer, feminist, and queer director.\n\nSpeaking of her childhood, Mother spoke of impromptu musical interludes carried out under the gentle wafts of pipe smoke in the living room where her father and extended family would make bluegrass melodies. She described their flawlessly seamless voices and instruments producing a calming environment of mental oblivion—they would harmonize to escape themselves as members of a dysfunctional family in the American South. When “blood harmony” emerged from Mother’s lips, I was struck with an overwhelming sense of those words manifesting themselves profoundly within me and my work.",
+	"date" : "2014",
 	"globalExt" : "jpg",
 	"numDigits" : 3,
 	"images" : [
-		1
+		1,
+		2,
+		3,
+		4,
+		5,
+		6,
+		7,
+		8
 	],
 	"captions" : {
-		"1" : "xxx"
 	}
 }

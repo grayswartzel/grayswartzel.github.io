@@ -1,14 +1,20 @@
 {
-	"title" : "xxx",
-	"role" : "xxx",
-	"description" : "xxx",
-	"date" : "xxx",
+	"title" : "Mother Me Part I",
+	"role" : "Concept, Art Direction",
+	"description" : "As a lens-based fine artist working with queer representation and mothering within the American South, I am responsible for all aspects of production from conception to fruition. mother / me (I) aimed to fuse the mediums of photography and video while using innovative storytelling methods to convey artful and highly constructed personas played by my mother and myself. After designing the aesthetic and sentiment of each image, we staged each scene. Then, I lit, directed, and produced each individual image, which is shown as a 4K movie. mother / me (I) was constructed from an initial idea that I approached as though it were a client brief. Ultimately, it was about conveying beauty while also serving as a meditation on life, death and love.",
+	"date" : "2019",
 	"globalExt" : "jpg",
 	"numDigits" : 3,
 	"images" : [
-		1
+		"256973764_1920_1080",
+		"256980495_1920_1080",
+		"327837819_1920_1080",
+		"256977302_1920_1080"
 	],
 	"captions" : {
-		"1" : "xxx"
+		"256973764" : "Self-Portrait with Mother (Serve)",
+		"256980495" : "Self-Portrait with Mother (Twins)",
+		"327837819" : "Self-Portrait with Mother (Olympia)",
+		"256977302" : "Self-Portrait with Mother (Immaculate)"
 	}
 }

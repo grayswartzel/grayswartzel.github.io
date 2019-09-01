@@ -37,7 +37,7 @@ function Params() {
 	this.titleLeftOffset = 0.5; // 0.37
 	this.bTitleAbove = true;
 	this.titleLineHeight = 1.1; // 1.25
-	this.titleLetterSpacing = 0.14; // 0.14
+	this.titleLetterSpacing = 0.09; // 0.14
 
 	// layout params
 	this.columnOffset = 1;
