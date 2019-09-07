@@ -98,7 +98,7 @@ var project = {};
 // arrows for animating image sets
 // var arrows = {};
 var about = {};
-var inquire = {};
+var contact = {};
 
 // Stores the logo at the top of the page
 var menu = {};
@@ -108,7 +108,7 @@ var emailLink = "mailto:grayswartzel@gmail.com?subject=Hello!";
 var menuElems = [ 	["logo", 	"Gray Swartzel", 	""],
 					["about", 	"about", 		"about"],
 					["and", 	"  &  ", 		null],
-					["inquire", "inquire", 		"inquire"]
+					["contact", "contact", 		"contact"]
 				];
 
 // Fonts we're using
@@ -345,21 +345,21 @@ function initAbout() {
 
 	return [aboutLoaded, dictLoaded];
 }
-function initInquire() {
+function initContact() {
 
 	// Init the inquire json
-	var loadInquire = function(data) { 
+	var loadContact = function(data) { 
 		// add the description
-		inquire['txt'] = getTextElement('inquire_txt', data["text"], "", fonts['body'], w.dark, ['async']);
+		contact['txt'] = getTextElement('contact_txt', data["text"], "", fonts['body'], w.dark, ['async']);
 	};
-	var inquireLoaded = $.Deferred();
-	var jsonPath = pathPrefix() + "_json/inquire.json";
-	$.get(jsonPath, loadInquire).done( function() { inquireLoaded.resolve(); });
+	var contactLoaded = $.Deferred();
+	var jsonPath = pathPrefix() + "_json/contact.json";
+	$.get(jsonPath, loadContact).done( function() { contactLoaded.resolve(); });
 
 	// make sure the dict is loaded
 	var dictLoaded = loadHomeData();
 
-	return [inquireLoaded, dictLoaded];
+	return [contactLoaded, dictLoaded];
 }
 function initProject(pageID) {
 
@@ -467,8 +467,8 @@ function initPageSpecificItems(pageID) {
 		return initHome();
 	} else if (pageID == "about") {
 		return initAbout();
-	} else if (pageID == "inquire") {
-		return initInquire();
+	} else if (pageID == "contact") {
+		return initContact();
 	} else {
 		return initProject(pageID);
 	}
@@ -547,8 +547,8 @@ function setPageTitle(pageID) {
 		document.title = "Gray Swartzel";
 	} else if (pageID == "about") {
 		document.title = "About | Gray Swartzel";
-	} else if (pageID == "inquire") {
-		document.title = "Inquire | Gray Swartzel";
+	} else if (pageID == "contact") {
+		document.title = "Contact | Gray Swartzel";
 	} else {
 		document.title = findElementWithKeyValueInArray(project["text"], "id", "title")["content"] + " | Gray Swartzel";
 	}
@@ -806,8 +806,8 @@ function showHome(bLayoutOnly=false) {
 function showAbout(bLayoutOnly=false) {
 
 	// Desktop Params
-	var columnFrac = 0.6;
-	var img2txtWidthFrac = 0.4;
+	var columnFrac = 0.73;
+	var img2txtWidthFrac = 0.39;
 	var marginFrac = 0.025;
 
 	// Mobile params
@@ -951,7 +951,7 @@ function showAbout(bLayoutOnly=false) {
 
 	return consecCall( [loadAbt, layoutAbt, animateAbt, finishPageLayout] );
 }
-function showInquire(bLayoutOnly=false) {
+function showContact(bLayoutOnly=false) {
 
 	var bDelay = bLayoutOnly ? 0 : 1;
 
@@ -959,21 +959,21 @@ function showInquire(bLayoutOnly=false) {
 
 	var layoutInq = function(def) {
 
-		$(inquire["txt"]).css("font-size", w.fontSizePx);
-		$(inquire["txt"]).css("letter-spacing", (w.bodyLetterSpacing*w.fontSizePx*0.8) + "px"); // .1993
-		$(inquire["txt"]).css("line-height", w.bodyLineHeight*1.5 + "px"); // .1993
-		$(inquire["txt"]).css("text-align", "center");
+		$(contact["txt"]).css("font-size", w.fontSizePx);
+		$(contact["txt"]).css("letter-spacing", (w.bodyLetterSpacing*w.fontSizePx*0.8) + "px"); // .1993
+		$(contact["txt"]).css("line-height", w.bodyLineHeight*1.5 + "px"); // .1993
+		$(contact["txt"]).css("text-align", "center");
 
 		setTxtPosDim(
-			$(inquire["txt"]),
+			$(contact["txt"]),
 			0,
 			0,
 			$(window).width());
 
 		setTxtPosDim(
-			$(inquire["txt"]),
+			$(contact["txt"]),
 			0,
-			Math.max(($(window).height()-w.headerPx)/2 - $(inquire["txt"]).height()/2 + w.headerPx, w.marginTopPx + w.headerPx));
+			Math.max(($(window).height()-w.headerPx)/2 - $(contact["txt"]).height()/2 + w.headerPx, w.marginTopPx + w.headerPx));
 
 		def.resolve();
 	};
@@ -985,7 +985,7 @@ function showInquire(bLayoutOnly=false) {
 		// show all items
 		setTimeout( function() { return showMenuItems(bLayoutOnly); }, 0 * displayOffsetMs * bDelay);
 		var animateTxt = function() { 
-			if (!bLayoutOnly) $(inquire["txt"]).fadeIn({queue:false, duration: w.fadeMs * fadeFrac}); 
+			if (!bLayoutOnly) $(contact["txt"]).fadeIn({queue:false, duration: w.fadeMs * fadeFrac}); 
 			def.resolve(); 
 		};
 		setTimeout( animateTxt , 1 * displayOffsetMs * bDelay);
@@ -1299,8 +1299,8 @@ function showAllItems(pageID, bLayoutOnly=false) {
 		showHome( bLayoutOnly );
 	} else if (pageID == "about") {
 		showAbout( bLayoutOnly );
-	} else if (pageID == "inquire") {
-		showInquire( bLayoutOnly );
+	} else if (pageID == "contact") {
+		showContact( bLayoutOnly );
 	} else {
 		showProject( bLayoutOnly );
 	}
