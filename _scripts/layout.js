@@ -84,8 +84,8 @@ function DesktopLayout(nCols, colWidth, colMargin, indexOffset) {
     this.edgeStDevMult = 0.05; // as a function of column width
 
     // Bounds on acceptable amounts of white space
-    this.spaceLoMeanMult = 0.3;
-    this.spaceLoStdevMult = 0.1;
+    this.spaceLoMeanMult = 0.2;
+    this.spaceLoStdevMult = 0.05;
     this.spaceHiMeanMult = 1.85; // If images start to stack, increase this
     this.spaceHiStdevMult = 0.1;
 
@@ -111,7 +111,7 @@ function DesktopLayout(nCols, colWidth, colMargin, indexOffset) {
 
 	  	// Anything off the edge of the page is unacceptable
 	  	if (thisRect.y < 0) {
-	  		like *= 0;
+	  		// like *= 0;
 	  		// console.log("\toff page ", like);
 	  	}
 
@@ -257,7 +257,7 @@ function DesktopLayout(nCols, colWidth, colMargin, indexOffset) {
 	  		// Sometimes, likelihoods are within less than a percent of each other. In these
 	  		// situations, where they are nearly indistinguishable, choose the rectangle
 	  		// higher up on the page.
-	  		var likelihoodTopSimilarityRange = 0.001; // fraction of top values that become indistinguishable
+	  		var likelihoodTopSimilarityRange = 0.05; // fraction of top values that become indistinguishable
 	  		var maxAcceptableLikelihood = hiLikelihood-(hiLikelihood - loLikelihood)*likelihoodTopSimilarityRange;
 	  		// console.log(maxAcceptableLikelihood);
 	  		for (var i = 0; i < likes.length; i++) {

@@ -3,20 +3,20 @@
 	"imgExt" : "jpg",
 	"projects" : [
 		{
-			"projectID" : "002",
-			"title" : "Mother Me Part I\n\\ On creative application of art-based storytelling.\n2019",
-			"url" : "http://grayyy.com/mother-me-part-i"
-		},
-		{
 			"projectID" : "001",
-			"title" : "Beautiful Minds\n\\ On creative brand strategy.\n2019",
+			"title" : "Beautiful Minds\n\\ On expanding education for breast self-exams.\n2019",
 			"url" : "http://grayyy.com/beautiful-minds",
 			"unlisted" : "false"
 		},
 		{
+			"projectID" : "002",
+			"title" : "mother / me (I)\n\\ On love and beauty, life and death.\n2018",
+			"url" : "http://grayyy.com/mother-me-i"
+		},
+		{
 			"projectID" : "003",
-			"title" : "Mother Me Part II\n\\ On creative application of art-based storytelling.\n2019",
-			"url" : "http://grayyy.com/mother-me-part-ii"
+			"title" : "mother / me (II)\n\\ On love and beauty, life and death.\n2019",
+			"url" : "http://grayyy.com/mother-me-ii"
 		},
 		{
 			"projectID" : "004",
