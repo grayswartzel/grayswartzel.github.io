@@ -731,6 +731,9 @@ function showHome(bLayoutOnly=false) {
 			// if mobile, add the text offset
 			if (w.onMobile) {
 				layout.addOffset(0, $( element["txt"] ).height());
+			} else {
+				// on desktop, also add an offset
+				layout.addOffset(0, $( element["txt"] ).height() + w.fontSizePx*0.55);
 			}
 
 			// On hovering over the image, show the text below it

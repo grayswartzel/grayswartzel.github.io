@@ -84,8 +84,8 @@ function DesktopLayout(nCols, colWidth, colMargin, indexOffset) {
     this.edgeStDevMult = 0.05; // as a function of column width
 
     // Bounds on acceptable amounts of white space
-    this.spaceLoMeanMult = 0.2;
-    this.spaceLoStdevMult = 0.05;
+    this.spaceLoMeanMult = 0.1;
+    this.spaceLoStdevMult = 0.01;
     this.spaceHiMeanMult = 1.85; // If images start to stack, increase this
     this.spaceHiStdevMult = 0.1;
 
@@ -160,7 +160,6 @@ function DesktopLayout(nCols, colWidth, colMargin, indexOffset) {
 	  		}
 	  	}
 
-	  	// if (this.rects.length != 0) bottom = this.rects[this.rects.length-1].b();
 	  	// Apply the inhibitors
 	  	var diff = thisRect.y - bottom;
 	  	// Lower bound on the white space
@@ -171,7 +170,6 @@ function DesktopLayout(nCols, colWidth, colMargin, indexOffset) {
 
 	  	// Higher bound on the white space
 	  	like *= (1 - logisticSimple(diff, this.spaceHiMeanPx, this.spaceHiStdevPx, true));
-	  	// console.log("\thigher bound ", like);
 
 
 	  	// If an image has no neighbors above, push it higher upwards
@@ -179,7 +177,6 @@ function DesktopLayout(nCols, colWidth, colMargin, indexOffset) {
 
 	  	// If there has been a lot of overlap, make room with some white space (?)
 
-	  	// console.log("New value: ",(thisRect.y-bottom)/colWidth * (1-like));
 
 
 	  	return like;
@@ -189,7 +186,7 @@ function DesktopLayout(nCols, colWidth, colMargin, indexOffset) {
  	// Return a rect describing the image location within the column matrix
  	this.getImagePosition = function(imgW, imgH) {
 
- 		console.log("New Position");
+ 		// console.log("New Position");
 
 	  	// Increment the counters
 	  	this.imgCounter += 1;
@@ -284,4 +281,12 @@ function DesktopLayout(nCols, colWidth, colMargin, indexOffset) {
 
 	  	return outRect;
 	};	
+
+	// Add an offset afterwards
+	this.addOffset = function(dx, dy) {
+		if (this.rects.length > 0) {
+			this.rects[this.rects.length-1].x += dx;
+			this.rects[this.rects.length-1].y += dy;
+		}
+	}
 };
